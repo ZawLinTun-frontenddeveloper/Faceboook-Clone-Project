@@ -1,0 +1,822 @@
+:root {
+    --primary-black-color: #242526;
+    --secondary-black-color: #18191A;
+    --grey-color: #3A3B3C;
+    --primary-blue: #2D88FF;
+    --primary-red: #F23E5C;
+    --primary-green: #57C571;
+    --primary-gold: #FEC43E;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--secondary-black-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-bar {
+    background-color: var(--primary-black-color);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav-div {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.feather-search {
+    position: absolute;
+    color: white;
+    left: 88px;
+    top: 22px;
+    font-size: 17px;
+}
+
+.search-bar {
+    background-color: var(--grey-color);
+    border: none;
+    height: 40px;
+    width: 220px;
+    border-radius: 50px;
+    color: white;
+    margin-left: 15px;
+    font-size: 0.9rem;
+    padding: 0 37px;
+}
+
+.icon-fb {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.middle-nav-div {
+    display: flex;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.nav-tab {
+    background-color: var(--primary-black-color);
+    width: 20%;
+    margin: 0 3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    font-size: 25px;
+}
+
+.nav-tab:hover {
+    background-color: var(--grey-color);
+
+}
+
+
+.home {
+    color: var(--primary-blue);
+    border-bottom: 3px solid var(--primary-blue);
+    border-radius: 5px 5px 3px 3px;
+}
+
+.right-nav-div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.profile-div {
+    display: flex;
+    align-items: center;
+    padding: 5px 7px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.profile-photo {
+    border-radius: 50px;
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+
+}
+
+.user-name {
+    color: white;
+    margin-left: 10px;
+}
+
+.profile-div:hover {
+    background-color: var(--grey-color);
+
+}
+
+.right-btn-div {
+    background-color: var(--grey-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.dropdown-icon {
+    margin-right: 25px;
+}
+
+.right-btn-div:hover {
+    background-color: var(--secondary-black-color);
+}
+
+.left-main {
+    width: 20%;
+}
+
+.main-profile-div {
+    display: flex;
+    align-items: center;
+    margin: 15px 20px;
+    padding: 5px;
+}
+
+.photo-icon {
+    border-radius: 50px;
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    margin: 0 auto;
+
+}
+
+.profile-name {
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 15px;
+
+}
+
+.svg-icon {
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+
+.underline-text {
+    color: var(--primary-blue);
+    font-size: 0.7rem;
+    margin-left: 5px;
+
+}
+
+.line {
+    margin: 0 20px;
+}
+
+.profile-left-circle {
+    background-color: var(--primary-black-color);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-drop {
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+.side-header {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.square-pic {
+    display: flex;
+    color: white;
+    font-size: 0.8rem;
+    margin: 20px 20px;
+    padding: 5px;
+}
+
+.shortcut-photo {
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+}
+
+.shortcut-title {
+    margin-left: 15px;
+    padding: 7px 0;
+}
+
+.left-main {
+    width: 20%;
+    overflow-y: auto;
+    height: 700px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--grey-color) var(--secondary-black-color);
+
+
+
+}
+
+.left-main::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+.main-profile-div:hover {
+    background-color: var(--grey-color);
+    border-radius: 8px;
+}
+
+.square-pic:hover {
+    background-color: var(--grey-color);
+    border-radius: 8px;
+}
+
+.left-footer {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+
+.left-footer a {
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.left-footer a:hover {
+    text-decoration: underline;
+
+}
+
+.left-footer-p {
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+.main-div {
+    display: flex;
+
+}
+
+.mid-main {
+    width: 60%;
+    padding: 20px 110px;
+    overflow-y: auto;
+    height: 700px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--grey-color) var(--secondary-black-color);
+}
+
+.myday-div {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-myday {
+
+    height: 100%;
+    width: 17%;
+    margin-left: 0px;
+
+}
+
+.myday-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+.other-myday {
+
+    width: 17%;
+    margin-left: 6px;
+    height: 100%;
+
+
+}
+
+.upload-status {
+    background-color: var(--primary-black-color);
+    border-radius: 15px;
+    margin: 15px auto;
+    width: 88%;
+    height: 130px;
+}
+
+.upper-status {
+    display: flex;
+}
+
+#upload-sts {
+    background-color: var(--grey-color);
+    border: none;
+    color: white;
+    width: 90%;
+    padding: 5px 20px;
+    border-radius: 40px;
+    margin: 8px 20px 8px 0px;
+
+}
+
+.status-photo {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0px 5px 10px;
+}
+
+.status-line {
+    margin: 5px 22px;
+}
+
+.lower-status {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.status-function-div {
+    display: flex;
+    padding: 10px 35px;
+    align-items: center;
+}
+
+.status-function-div:hover {
+    background-color: var(--grey-color);
+    border-radius: 10px;
+}
+
+.function-icon {
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.feather-video {
+    color: var(--primary-red);
+}
+
+.feather-plus-square {
+    color: var(--primary-green);
+}
+
+.feather-activity {
+    color: var(--primary-gold);
+}
+
+.function-text {
+    color: white;
+    text-align: center;
+}
+
+
+.room-section {
+    background-color: var(--primary-black-color);
+    border-radius: 15px;
+    margin: 15px auto;
+    width: 88%;
+    height: 115px;
+}
+
+.room-upper-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.left-room-up {
+    display: flex;
+    align-items: center;
+
+}
+
+.room-icon {
+    color: purple;
+    font-size: 24px;
+}
+
+.room-icon-div {
+    display: flex;
+    align-items: center;
+    margin: 15px 10px 10px 25px;
+}
+
+.room-text {
+    color: white;
+    margin-left: 8px;
+}
+
+.description-div {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 15px 0px 10px;
+}
+
+.description {
+    font-size: 0.8rem;
+}
+
+.feather-info {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.create {
+    color: var(--primary-blue);
+}
+
+.right-room-up {
+    margin-right: 20px;
+}
+
+
+
+.room-lower-div {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    padding: 0 20px;
+}
+
+.room-profile {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.room-profile-img {
+    object-fit: cover;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+}
+
+.room-upload-icon {
+    position: relative;
+    color: white;
+    bottom: 73px;
+    left: 5px;
+    z-index: 3;
+    font-size: 25px;
+}
+
+.overlay {
+    background-color: black;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    border-radius: 50px;
+    opacity: 30%;
+    bottom: 42px;
+    z-index: 1;
+
+}
+
+.other-room {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.active {
+    position: relative;
+    background-color: var(--primary-green);
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    left: 25px;
+    bottom: 12px;
+}
+
+.feed-post {
+    background-color: var(--primary-black-color);
+    width: 88%;
+    height: 770px;
+    border-radius: 15px;
+    margin: 15px auto;
+}
+
+.name-sts-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.left-name-sts {
+    display: flex;
+    margin-left: 20px;
+}
+
+.name-profile {
+    object-fit: cover;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.hr-div {
+    display: flex;
+    margin-top: 2px;
+}
+
+.hours,
+.name,
+.feather-airplay {
+    color: white;
+}
+
+.hours,
+.feather-airplay {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+
+
+.feather-airplay {
+    margin-left: 3px;
+}
+
+.dots {
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: var(--grey-color);
+    margin-right: 5px;
+}
+
+.right-name-sts {
+    display: flex;
+    margin-right: 20px;
+}
+
+.status-para-div {
+    padding: 0px 20px;
+    line-height: 130%;
+}
+
+.status-para {
+    color: white;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.upload-photo-div {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.upload-photo {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.react-div {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-react {
+    display: flex;
+}
+
+.emoji-div {
+    display: flex;
+}
+
+.emojis {
+    width: 20px;
+    height: 20px;
+}
+
+.like-div {
+    margin-left: 5px;
+}
+
+.like {
+    color: white;
+}
+
+.right-react {
+    display: flex;
+}
+
+.comment,
+.shares {
+    color: white;
+    margin-left: 10px;
+}
+
+.feed-line {
+    margin: 13px 20px 2px;
+    border: 0.5px solid grey;
+}
+
+.engagement-buttons-div {
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-btn,
+.cmt-btn,
+.shr-btn {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 33%;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+
+.like-btn:hover,
+.cmt-btn:hover,
+.shr-btn:hover {
+    background-color: var(--grey-color);
+}
+
+.engage-para {
+    margin: auto 5px;
+}
+
+.btn-icon {
+    font-size: 22px;
+}
+
+.right-main {
+    width: 20%;
+    padding: 20px 15px;
+    overflow-y: auto;
+    height: 700px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--grey-color) var(--secondary-black-color);
+}
+
+h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.top-ad{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin: 10px 0px;
+    
+}
+
+.flux-para{
+    font-size: 1rem;
+    color: white;
+    width: 150px;
+    word-wrap: break-word;
+    margin-left: 10px;
+}
+
+.ads-link{   
+    width: 150px;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.flux{
+    width: 131px;
+    height: 131px;
+    border-radius: 10px;
+}
+
+.ads-line{
+    margin: 20px 0;
+    width: 95%;
+    
+}
+
+.page-title:hover{
+    background-color: grey;
+}
+
+.page-title{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+.page-logo{
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+}
+
+.titles{
+    color: white;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+
+.page-text{
+    margin-left: 8px;
+    font-size: 0.8rem;
+}
+
+.feather-message-square, .page-text, .feather-bell, .feather-disc{
+    color: white;
+}
+
+.feather-message-square, .feather-bell{
+    font-size: 20px;
+}
+
+.page-msg, .page-noti, .page-promo{
+    margin-left: 50px;
+    display: flex;
+    margin-top: 18px;
+}
+
+#margin{
+    margin-top: 5px;
+}
+
+.contact-title-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+
+.alert{
+    color: white;
+}
+
+.friend-div:hover{
+    background-color: var(--grey-color);
+    border-radius: 10px;
+}
+
+.friend-div{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.friend-photo{
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.friend-text{
+    color: white;
+    margin-left: 10px;
+}
